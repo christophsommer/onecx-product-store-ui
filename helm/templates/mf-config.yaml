@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: 'onecx-product-store-ui-mf-config'
+data:
+  microfrontend: |-
+{{ tpl (.Files.Get "microfrontend.json") . | indent 4 }}
