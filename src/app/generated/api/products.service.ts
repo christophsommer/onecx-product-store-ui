@@ -66,7 +66,7 @@ export interface UpdateProductRequestParams {
   providedIn: 'any',
 })
 export class ProductsAPIService {
-  protected basePath = '.';
+  protected basePath = '.'; //TODO CSO 2023-12-13 autogeneration added http://onecx-product-store-bff:8080', hence manually added
   public defaultHeaders = new HttpHeaders();
   public configuration = new Configuration();
   public encoder: HttpParameterCodec;

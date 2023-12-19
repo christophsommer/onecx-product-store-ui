@@ -1,0 +1,38 @@
+:host ::ng-deep {
+  // reduce the size of buttons used inside a table row
+  td button.p-button {
+    &.p-button-icon-only {
+      width: unset !important;
+    }
+    &.p-button-rounded {
+      height: unset !important;
+    }
+    &[disabled] {
+      opacity: 0.6;
+    }
+  }
+  .p-paginator .p-paginator-current {
+    cursor: auto;
+  }
+  .p-datatable .p-datatable-header {
+    padding: 0.4rem 0.2rem 0.9rem 0.75rem;
+  }
+  .p-panel .p-panel-content {
+    background-color: var(--surface-50) !important;
+  }
+
+  .p-dropdown .p-dropdown-label,
+  .p-inputgroup-addon {
+    padding-bottom: 0.5rem;
+    padding-top: 0.7rem;
+  }
+
+  .danger-action-text {
+    color: var(--danger-button-bg);
+  }
+
+  .pseudo-button:hover {
+    background: var(--button-hover-bg) !important;
+    cursor: pointer;
+  }
+}
